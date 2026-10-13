@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hand Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Hand Tracker</h1>
+
+    <div class="stage">
+      <video id="video" playsinline muted></video>
+      <canvas id="overlay"></canvas>
+      <div id="count" class="count">–</div>
+    </div>
+
+    <p id="status" class="status">Click start and allow camera access.</p>
+    <p id="details" class="details"></p>
+    <button id="start">Start camera</button>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
